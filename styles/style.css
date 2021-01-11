@@ -3,7 +3,7 @@ body {
 }
 
 #apple-stock-chart .axis path,
-.axis line {
+#apple-stock-chart.axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
