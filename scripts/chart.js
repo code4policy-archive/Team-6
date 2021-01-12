@@ -28,9 +28,7 @@ function drawLineChart(cssSelector){
       .x(function(d) { return x(d.date); })
       .y(function(d) { return y(d.close); });
 
-  var svg = d3.select("#apple-stock-chart").append("svg")
-      .attr("class", "chart")
-      .attr("id", "apple-stock-chart")
+  var svg = d3.select(cssSelector).append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
